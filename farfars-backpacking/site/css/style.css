@@ -1,0 +1,16 @@
+@font-face {
+    font-family: Bree-serif;
+    src: url(fonts/BreeSerif-Regular.ttf)
+}
+
+@media only screen and (max-width: 375px) {
+
+    body {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+    
+}
+
+
