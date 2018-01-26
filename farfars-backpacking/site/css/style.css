@@ -44,14 +44,17 @@ header {
     grid-column: 1/11;
     background-color: #E88D00;
     display: grid;
-    grid-template-rows: 1, 1fr;
-    grid-template-columns: repeat(10, 1fr)
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(10, 1fr);
 }
 
-.content {
+.center {
     grid-row: 2/8;
     grid-column: 1/11;
-    background-color: #FFD000
+    background-color: #FFD000;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
 }
 
 footer {
@@ -60,16 +63,12 @@ footer {
     background-color: #E88D00;
 }
 
-img {
-    height: 50px;
-    width: 50px;
-    align-content: center;
-}
-
 .search {
     grid-column: 1/2;
     grid-row: 1/2;
     margin: 50px;
+    height: 50px;
+    width: 50px;
 }
 
 .logo {
@@ -80,4 +79,37 @@ img {
     grid-column: 10/11;
     grid-row: 1/2;
     margin: 50px;
+    height: 50px;
+    width: 50px;
+}
+
+.content {
+    display:grid; 
+    grid-column: 2/6;
+    grid-row: 1/7;
+    background-color: #FFD000;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(13, 1fr)
+}
+
+.destination1 {
+    grid-row: 2/4;
+    grid-column: 2/8;
+}
+
+.destination2 {
+    grid-row: 5/7;
+    grid-column: 2/8;
+}
+
+.destination3 {
+    grid-row: 8/10;
+    grid-column: 2/8;
+}
+
+.destination4 {
+    grid-row: 11/13;
+    grid-column: 2/8;
+    height: 100%;
+    width: 100%;
 }
