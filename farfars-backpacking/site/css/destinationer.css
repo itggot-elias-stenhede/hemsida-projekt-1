@@ -85,27 +85,10 @@ footer {
     text-decoration: none;
     color: black;
     font-family: Bree-serif;
-    font-size: 50px;
+    font-size: 4vw;
     margin: 0px;
     text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 a {
     text-decoration: none;
@@ -115,7 +98,107 @@ a {
     grid-column: 4/6;
     grid-row: 12/13;
     background-color: #FF2200;
-    border-radius: 15px;
-    box-shadow: 0px 0px 1vw 0.3vw #330900;
-    margin-top: 200px;
+    border-radius: 1.3vw;
+    box-shadow: 0.2vw 0.2vw 0.5vw black;
+    margin-top: 10vw;
+}
+
+@media only screen and (max-width: 900px) {
+    
+    @font-face {
+        font-family: Calibri;
+        src: url(fonts/Calibri.ttf);
+    }
+
+    body {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+    }
+
+    header {
+        grid-row: 1/2;
+        grid-column: 1/11;
+        background-color: #E88D00;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(10, 1fr);
+    }
+
+    .logo {
+        font-family: Bree-serif;
+        font-size: 8vw;
+        text-align: center;
+        grid-column: 4/7; 
+        margin-top: 6vw;
+    }
+
+    h2 {
+        align-content: center;
+    }
+
+    h3 {
+        font-family: Bree-serif;
+        font-size: 5vw;
+        color: #000000;
+    }
+
+    .search {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: 8vw;
+        height: 8vw;
+        width: 8vw;
+    }
+
+    .menu {
+        grid-column: 10/11;
+        grid-row: 1/2;
+        margin: 8vw;
+        height: 8vw;
+        width: 8vw;
+    }
+
+    .center {
+        grid-row: 2/7;
+        grid-column: 1/11;
+        background-color: #FFD000;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .content {
+        display:grid; 
+        grid-column: 2/6;
+        grid-row: 1/7;
+        background-color: #FFD000;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(13, 1fr)
+    }
+
+    footer {
+        grid-row: 7/8;
+    }
+
+    .boka {
+        text-decoration: none;
+        color: black;
+        font-family: Bree-serif;
+        font-size: 4vw;
+        margin: 0px;
+        text-align: center;
+        grid-row: 4/5;
+    }
+
+    .knapp {
+        grid-column: 4/6;
+        grid-row: 12/13;
+        background-color: #FF2200;
+        border-radius: 1.3vw;
+        box-shadow: 0.2vw 0.2vw 0.5vw black;
+    }
+
+
 }
