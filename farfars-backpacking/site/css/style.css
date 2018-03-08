@@ -250,4 +250,8 @@
         filter: brightness(120%);
     }
 
+    a h3:hover {
+        color: #1A1A1A;
+    }
+
 }
