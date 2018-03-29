@@ -1,0 +1,553 @@
+@font-face {
+    font-family: Bree-serif;
+    src: url(fonts/BreeSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: Calibri;
+    src: url(fonts/Calibri.ttf);
+}
+
+
+.-boka {
+    background-color: #FF2200;
+    border-radius: 15px;
+    margin: 0px;
+    box-shadow: 1px 1px 5px #330900;
+    font-size: 4vw;
+    text-align: center;
+    color:black;
+    grid-row: 9/10;
+}
+
+.-knapp {
+    grid-row: 9/10;
+    grid-column: 3/7;
+}
+
+._rubrik {
+    grid-column: 1/9;
+    grid-row: 1/2;
+    font-size: 4vw;
+    margin: 1vw;
+    text-align: center;
+}
+
+._bild{
+    grid-row: 2/8;
+    grid-column: 2/8;
+    background-color: black; 
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 1px 3px 0.5px black;
+}
+
+._text {
+    grid-column: 2/8;
+    grid-row: 9/12;
+    font-family: Calibri;
+    font-size: 1.5vw;
+    margin-top: 0px;
+}
+
+._knapp {
+    grid-column: 4/6;
+    grid-row: 13/14;
+    background-color: #FF2200;
+    border-radius: 1.3vw;
+    box-shadow: 0.2vw 0.2vw 0.5vw black;
+}
+
+._boka {
+    grid-row: 12/13;
+    text-decoration: none;
+    color: black;
+    font-family: Bree-serif;
+    font-size: 5vh; 
+    text-align: center;
+}
+
+.skickat{
+    grid-row: 3/7;
+    grid-column:3/7;
+    background-color: #37FF00;
+    font-family: Calibri;
+    border-radius: 2vw;
+}
+
+h4 {
+    font-family: Calibri;
+    font-size: 3vw;
+    grid-row: 8/9;
+    grid-column: 2/8;
+    margin: 0px;
+    margin-top: 2vw;
+}
+
+input {
+    height: 4vh;
+    margin-top: 3vw;
+}
+
+.-email {
+    grid-row: 1/2;
+    grid-column: 1/9;
+}
+
+.-förnamn{
+    grid-row: 2/3;
+    grid-column: 1/9;
+}
+
+.-efternamn{
+    grid-row: 3/4;
+    grid-column: 1/9;
+}
+
+.-telefon{
+    grid-row: 4/5;
+    grid-column: 1/9;
+}
+
+.-personnummer{
+    grid-row: 5/6;
+    grid-column: 1/9;
+}
+
+.-meddelande{
+    grid-row: 6/7;
+    grid-column: 1/9;
+}
+
+.-skickat{
+    grid-row: 6/8;
+    grid-column: 2/8;
+    background-color: #37FF00;
+    font-family: Calibri;
+    border-radius: 3vw;
+    font-size: 3vw;
+}
+
+h5 {
+    font-size: 3vw;
+    margin: 2vw;
+}
+
+body {
+    width: auto;
+    height: auto;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 150px);
+}
+
+@media only screen and (max-width: 900px) {
+
+    h1 {
+        font-family: Bree-serif;
+        font-size: 100px;
+        margin-top: 5px;
+    }
+
+    h2 {
+        font-family: Calibri;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    h3 {
+        font-family: Bree-serif;
+        font-size: 50px;
+        color: #000000;
+    }
+
+        h4 {
+        font-family: Calibri;
+        font-size: 5vw;
+        grid-row: 8/9;
+        grid-column: 2/8;
+        margin: 0px;
+        margin-top: 2vw;
+    }
+
+    h5 {
+        margin-left: 3vw;
+        margin-top: 3vw;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    header {
+        grid-row: 1/2;
+        grid-column: 1/11;
+        background-color: #E88D00;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(10, 1fr);
+        height: 70%;
+    }
+
+    .center {
+        grid-row: 2/8;
+        grid-column: 1/11;
+        background-color: #FFD000;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    footer {
+        grid-row: 8/9;
+        grid-column: 1/11;
+        background-color: #E88D00;
+    }
+
+    .search {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: 50px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .logo {
+        grid-column: 5/7;
+    }
+
+    .menu {
+        grid-column: 10/11;
+        grid-row: 1/2;
+        margin: 50px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .content {
+        display:grid; 
+        grid-column: 2/6;
+        grid-row: 1/7;
+        background-color: #FFD000;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(13, 1fr)
+    }
+
+    .destination1 {
+        grid-row: 2/4;
+        grid-column: 2/8;
+        background-image: url(../img/thailand-kina.jpg);
+        text-align: center;
+        filter: brightness(130%);
+        overflow-wrap: 
+    }
+
+    .destination2 {
+        grid-row: 5/7;
+        grid-column: 2/8;
+        background-image: url(../img/frankrike-polen.jpg);
+        text-align: center;
+        filter: brightness(120%);
+    }
+
+    .destination3 {
+        grid-row: 8/10;
+        grid-column: 2/8;
+        background-image: url(../img/norge-danmark.jpg);
+        text-align: center;
+        filter: brightness(150%);
+    }
+
+    .destination4 {
+        grid-row: 11/13;
+        grid-column: 2/8;
+        background-image: url(../img/finland-ryssland.jpg);
+        text-align: center;
+        filter: brightness(120%);
+    }
+
+    a h3:hover {
+        color: #1A1A1A;
+    }
+
+    ._boka {
+        text-decoration: none;
+        color: black;
+        font-family: Bree-serif;
+        font-size: 5vh; 
+        text-align: center;
+    }
+    
+    .-skickat{
+        grid-row: 6/8;
+        grid-column: 2/8;
+        background-color: #37FF00;
+        font-family: Calibri;
+        border-radius: 3vw;
+    }
+
+    input {
+        height: 4vh;
+        margin-top: 3vw;
+    }
+    
+    .-email {
+        grid-row: 1/2;
+        grid-column: 1/9;
+    }
+    
+    .-förnamn{
+        grid-row: 2/3;
+        grid-column: 1/9;
+    }
+    
+    .-efternamn{
+        grid-row: 3/4;
+        grid-column: 1/9;
+    }
+    
+    .-telefon{
+        grid-row: 4/5;
+        grid-column: 1/9;
+    }
+    
+    .-personnummer{
+        grid-row: 5/6;
+        grid-column: 1/9;
+    }
+    
+    .-meddelande{
+        grid-row: 6/7;
+        grid-column: 1/9;
+        background-color: aqua;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    body {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: 0.6fr 1fr 1fr 1fr 1fr 0.6fr
+    }
+
+    h4 {
+        font-family: Calibri;
+        font-size: 4vh;
+        grid-row: 4/5;
+        grid-column: 1/9;
+        margin: 0px;
+        margin-top: 1vw;
+    }
+
+    h1 {
+        font-family: Bree-serif;
+        font-size: 8vw;
+        text-align: center;
+        grid-column: 4/7; 
+        margin-top: 6vw;
+        text-decoration: none;
+        color: black;
+    }
+
+    h2 {
+        align-content: center;
+    }
+
+    h3 {
+        font-family: Bree-serif;
+        font-size: 5vw;
+        color: #000000;
+        margin: 0;
+        padding: 0;
+    }
+
+    h5 {
+        margin-left: 3vw;
+        margin-top: 3vw;
+    }
+
+    .search {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: 8vw;
+        height: 8vw;
+        width: 8vw;
+    }
+
+    .menu {
+        grid-column: 10/11;
+        grid-row: 1/2;
+        margin: 8vw;
+        height: 8vw;
+        width: 8vw;
+    }
+
+    .center {
+        grid-row: 2/6;
+        grid-column: 1/11;
+        background-color: #FFD000 ;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 15vh);
+    }
+
+    .content {
+        display:grid; 
+        grid-column: 2/6;
+        grid-row: 1/7;
+        background-color: #FFD000;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 1fr)
+    }
+
+
+    .destination1 {
+        grid-row: 2/3;
+        grid-column: 1/9;
+        background-image: url(../img/thailand-kina.jpg);
+        text-align: center;
+        filter: brightness(130%);
+    }
+
+    .destination2 {
+        grid-row: 4/5;
+        grid-column: 1/9;
+        background-image: url(../img/frankrike-polen.jpg);
+        text-align: center;
+        filter: brightness(120%);
+    }
+
+    .destination3 {
+        grid-row: 6/7;
+        grid-column: 1/9;
+        background-image: url(../img/norge-danmark.jpg);
+        text-align: center;
+        filter: brightness(150%);
+    }
+
+    .destination4 {
+        grid-row: 8/9;
+        grid-column: 1/9;
+        background-image: url(../img/finland-ryssland.jpg);
+        text-align: center;
+        filter: brightness(120%);
+}
+
+    header {
+        grid-row: 1/2;
+        grid-column: 1/11;
+        background-color: #E88D00;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(10, 1fr);
+    }
+
+    footer {
+        grid-row: 6/7;
+        grid-column: 1/11;
+        background-color: #E88D00;
+        font-family: Calibri;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    ._boka {
+        text-decoration: none;
+        color: black;
+        font-family: Bree-serif;
+        font-size: 5vh; 
+        text-align: center;
+        margin: 0;
+        margin-top: 2vw;
+    }
+
+    input {
+        height: 30%;
+        margin-top: 10vw;
+    }
+
+    .-email {
+        grid-row: 1/2;
+        grid-column: 1/9;
+    }
+    
+    .-förnamn{
+        grid-row: 2/3;
+        grid-column: 1/9;
+    }
+    
+    .-efternamn{
+        grid-row: 3/4;
+        grid-column: 1/9;
+    }
+    
+    .-telefon{
+        grid-row: 4/5;
+        grid-column: 1/9;
+    }
+    
+    .-personnummer{
+        grid-row: 5/6;
+        grid-column: 1/9;
+    }
+    
+    .-meddelande{
+        grid-row: 6/7;
+        grid-column: 1/9;
+        height: 100%;
+    }
+    
+    .skickat{
+        grid-row: 4/6;
+        grid-column: 2/8;
+        font-family: Calibri;
+        border-radius: 3vw;
+    }
+    
+    .-boka {
+        grid-column: 4/6;
+        grid-row: 7/8;
+        background-color: #FF2200;
+        border-radius: 15px;
+        padding: 10px;
+        box-shadow: 1px 1px 5px #330900;
+    }
+    
+    .-knapp {
+        grid-row: 8/9;
+        grid-column: 3/7;
+    }
+
+    ._bild{
+        grid-row: 2/4;
+        grid-column: 1/9;
+        background-color: black; 
+        width: 100%;
+        height: 100%;
+        box-shadow: 1px 1px 3px 0.5px black;
+    }
+
+    ._text {
+        grid-column: 1/9;
+        grid-row: 5/7;
+        font-family: Calibri;
+        font-size: 2.5vw;
+        margin-top: 0px;
+    }
+
+    ._rubrik {
+        grid-column: 1/9;
+        grid-row: 1/2;
+        font-size: 8vw;
+        margin-top: 3vh;
+    }
+
+    ._knapp {
+        grid-column: 3/7;
+        grid-row: 7/8;
+    }
+}
