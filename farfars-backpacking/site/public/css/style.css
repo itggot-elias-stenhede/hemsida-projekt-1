@@ -8,6 +8,38 @@
     src: url(fonts/Calibri.ttf);
 }
 
+.destination1 {
+    grid-row: 2/4;
+    grid-column: 2/8;
+    background-image: url(../img/thailand-kina.jpg);
+    text-align: center;
+    filter: brightness(130%);
+    overflow-wrap: 
+}
+
+.destination2 {
+    grid-row: 5/7;
+    grid-column: 2/8;
+    background-image: url(../img/frankrike-polen.jpg);
+    text-align: center;
+    filter: brightness(120%);
+}
+
+.destination3 {
+    grid-row: 8/10;
+    grid-column: 2/8;
+    background-image: url(../img/norge-danmark.jpg);
+    text-align: center;
+    filter: brightness(150%);
+}
+
+.destination4 {
+    grid-row: 11/13;
+    grid-column: 2/8;
+    background-image: url(../img/finland-ryssland.jpg);
+    text-align: center;
+    filter: brightness(120%);
+}
 
 .-boka {
     background-color: #FF2200;
